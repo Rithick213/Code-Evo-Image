@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content-width=device-width, initial-scale=1.0">
+    <title>Animated Filterable Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cats">Cats</button>
+        <button class="filter-btn" data-filter="dogs">Dogs</button>
+        <button class="filter-btn" data-filter="humans">Humans</button>
+        <button class="filter-btn" data-filter="birds">Birds</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <div class="gallery">
+        <div class="filter-item cats" data-aos="fade-up"><img src="img/jae-park-7GX5aICb5i4-unsplash.jpg" loading="lazy" alt="Cat 1"></div>
+        <div class="filter-item cats" data-aos="fade-up"><img src="img/rana-sawalha-X7UR0BDz-UY-unsplash.jpg" loading="lazy" alt="Cat 2"></div>
+        <div class="filter-item cats" data-aos="fade-up"><img src="img/zoe-gayah-jonker-13ky5Ycf0ts-unsplash.jpg" loading="lazy" alt="Cat 3"></div>
+        
+        <div class="filter-item dogs" data-aos="fade-up"><img src="img/baptist-standaert-mx0DEnfYxic-unsplash.jpg" loading="lazy" alt="Dog 1"></div>
+        <div class="filter-item dogs" data-aos="fade-up"><img src="img/caleb-fisher-pgUbpDLJh3E-unsplash.jpg" loading="lazy" alt="Dog 2"></div>
+        <div class="filter-item dogs" data-aos="fade-up"><img src="img/jared-murray-RApQxN_Js5Y-unsplash.jpg" loading="lazy" alt="Dog 3"></div>
+
+        <div class="filter-item humans" data-aos="fade-up"><img src="img/marina-vitale-t809JJ6r9KA-unsplash.jpg" loading="lazy" alt="Human 1"></div>
+        <div class="filter-item humans" data-aos="fade-up"><img src="img/helena-lopes-PGnqT0rXWLs-unsplash.jpg" loading="lazy" alt="Human 2"></div>
+        <div class="filter-item humans" data-aos="fade-up"><img src="img/matthieu-gouiffes-7ggUdi1foR0-unsplash.jpg" loading="lazy" alt="Human 3"></div>
+
+        <div class="filter-item birds" data-aos="fade-up"><img src="img/rusty-watson-KLylpBvo0ww-unsplash.jpg" loading="lazy" alt="Bird 1"></div>
+        <div class="filter-item birds" data-aos="fade-up"><img src="img/madison-oren-hcj90TOBW58-unsplash.jpg" loading="lazy" alt="Bird 2"></div>
+        <div class="filter-item birds" data-aos="fade-up"><img src="img/mcgill-library-kbjQSAZYrHk-unsplash.jpg" loading="lazy" alt="Bird 3"></div>
+
+        <div class="filter-item nature" data-aos="fade-up"><img src="img/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" loading="lazy" alt="Nature 1"></div>
+        <div class="filter-item nature" data-aos="fade-up"><img src="img/kimon-maritz-zMV7sqlJNow-unsplash.jpg" loading="lazy" alt="Nature 2"></div>
+        <div class="filter-item nature" data-aos="fade-up"><img src="img/johannes-andersson-UCd78vfC8vU-unsplash.jpg" loading="lazy" alt="Nature 3"></div>
+
+        <div class="filter-item technology" data-aos="fade-up"><img src="img/maxim-hopman-IayKLkmz6g0-unsplash.jpg" loading="lazy" alt="Technology 1"></div>
+        <div class="filter-item technology" data-aos="fade-up"><img src="img/alex-knight-2EJCSULRwC8-unsplash.jpg" loading="lazy" alt="Technology 2"></div>
+        <div class="filter-item technology" data-aos="fade-up"><img src="img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" loading="lazy" alt="Technology 3"></div>
+
+        <div class="filter-item food" data-aos="fade-up"><img src="img/pablo-merchan-montes-0nT08Z-MhiE-unsplash.jpg" loading="lazy" alt="Food 1"></div>
+        <div class="filter-item food" data-aos="fade-up"><img src="img/alex-munsell-Yr4n8O_3UPc-unsplash.jpg" loading="lazy" alt="Food 2"></div>
+        <div class="filter-item food" data-aos="fade-up"><img src="img/brooke-lark-GJMlSBS0FhU-unsplash.jpg" loading="lazy" alt="Food 3"></div>
+
+        <div class="filter-item abstract" data-aos="fade-up"><img src="img/victoria-berman-U-ouhtPgHH4-unsplash.jpg" loading="lazy" alt="Abstract Art 1"></div>
+        <div class="filter-item abstract" data-aos="fade-up"><img src="img/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg" loading="lazy" alt="Abstract Art 2"></div>
+        <div class="filter-item abstract" data-aos="fade-up"><img src="img/dan-cristian-padure-yCbgsZ6rVPU-unsplash.jpg" loading="lazy" alt="Abstract Art 3"></div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
